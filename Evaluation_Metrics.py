@@ -46,7 +46,7 @@ for file_path in json_files:
     with open(file_path, 'r') as file:
         data = json.load(file)
 
-    print(data)
+    #print(data)
 
     # Process existing contexts to split each context into sentences
     updated_contexts = []
@@ -81,7 +81,9 @@ for file_path in json_files:
         answer_correctness,
         answer_relevancy
     ])
+
     df = score.to_pandas()
+    df
 
     # Write the DataFrame to an Excel file with the same base name as the JSON file
     output_excel_path = os.path.join(output_dir, os.path.basename(file_path).replace('.json', '_scores.xlsx'))
