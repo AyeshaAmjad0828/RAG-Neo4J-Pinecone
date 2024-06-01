@@ -6,9 +6,9 @@
 
 ### Technology Stack
 
-| Neo4j                                | Pinecone                             | Langchain                            | TogetherAI                           | OpenAI                               | Hugging Face                         |
-| ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![[Pasted image 20240602005215.png]] | ![[Pasted image 20240602005222.png]] | ![[Pasted image 20240602005230.png]] | ![[Pasted image 20240602005237.png]] | ![[Pasted image 20240602005156.png]] | ![[Pasted image 20240602005149.png]] |
+| Neo4j | Pinecone | Langchain | TogetherAI | OpenAI | Hugging Face                         |
+| ----- | -------- | --------- | ---------- | ------ | ------------------------------------ |
+|       |          |           |            |        | ![[Pasted image 20240602005149.png]] |
 ### Overview
 **Purpose:**
 Conducting a comprehensive analysis of RAG (Retriever-Augmented Generation) pipeline using Neo4J and Pinecone to test: 
@@ -106,12 +106,12 @@ embedding_dimension = 1536  ##change to 384=gpt4all embedding,
 **![](https://lh7-us.googleusercontent.com/Itt_HYtJA8vOsJx9rbbstPWEmkbE6sw9CjuK6U2zSFKR5056SaPFGyQ4rju-owBwnF3v2vZZHIUoHMrmHiF1rF4FIu3OKw0UswbH1zTKxc42dqtiA2y8hTXA5gQh0OoJwyP27YUabkrL)**
 We are using six metrics to evaluate the RAG pipeline results:
 
-1.[Faithfulness](https://docs.ragas.io/en/latest/concepts/metrics/faithfulness.html)
-2.[Answer relevancy](https://docs.ragas.io/en/latest/concepts/metrics/answer_relevance.html)
-3.[Context precision](https://docs.ragas.io/en/latest/concepts/metrics/context_precision.html)
-4.[Context recall](https://docs.ragas.io/en/latest/concepts/metrics/context_recall.html)
-5.[Answer correctness](https://docs.ragas.io/en/latest/concepts/metrics/answer_correctness.html)
-6.[Answer similarity](https://docs.ragas.io/en/latest/concepts/metrics/semantic_similarity.html)
+1. [Faithfulness](https://docs.ragas.io/en/latest/concepts/metrics/faithfulness.html)
+2. [Answer relevancy](https://docs.ragas.io/en/latest/concepts/metrics/answer_relevance.html)
+3. [Context precision](https://docs.ragas.io/en/latest/concepts/metrics/context_precision.html)
+4. [Context recall](https://docs.ragas.io/en/latest/concepts/metrics/context_recall.html)
+5. [Answer correctness](https://docs.ragas.io/en/latest/concepts/metrics/answer_correctness.html)
+6. [Answer similarity](https://docs.ragas.io/en/latest/concepts/metrics/semantic_similarity.html)
 
 Run [Evaluation_Metrics.py]([RAG-Neo4J-Pinecone/Evaluation_Metrics.py at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/Evaluation_Metrics.py)) to generate evaluation score for each question. Here is how the output of evaluation looks like: [scores.xlsx]([RAG-Neo4J-Pinecone/output/scores/qa_results_hybridneo4j_langchain_cosine_recursive_gpt4_scores.xlsx at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/output/scores/qa_results_hybridneo4j_langchain_cosine_recursive_gpt4_scores.xlsx))
 
