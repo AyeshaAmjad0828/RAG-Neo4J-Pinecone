@@ -117,4 +117,6 @@ Run [Evaluation_Metrics.py]([RAG-Neo4J-Pinecone/Evaluation_Metrics.py at main ·
 
 ### Pre-requisite Set up
 1. Set up accounts on [Neo4j](https://neo4j.com/), [Pinecone](https://app.pinecone.io/), [OpenAI](https://openai.com/), [Hugging Face,](https://huggingface.co/) and [TogetherAI](https://www.together.ai/).
-2. Add the API keys and configuration in [.env]([RAG-Neo4J-Pinecone/.env at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env)) file. 
+2. Add the API keys and configuration in [.env]([RAG-Neo4J-Pinecone/.env at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env)) file.
+
+TogetherAI is used to facilate the inference from several LLMs on local machine.
