@@ -2,7 +2,7 @@
 ## NEO4J vs PINECONE
 > Refer to pre-requisite section for the environment set up prior to starting this experiment.
 > 1. Clone this repository. 
-> 2. Add relevant API keys and configurations in [.env]([RAG-Neo4J-Pinecone/.env at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env)) file. 
+> 2. Add relevant API keys and configurations in [.env](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env) file. 
 
 ### Technology Stack
 
@@ -35,7 +35,7 @@ In this project all the experiments are done on the [Constitution of Pakistan](h
 To evaluate the RAG, questions with ground truth can be found here: [questions.json](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/input/questions.json)
 ### Running PINECONE Rag
 
-Select your desired experiment by defining the following options in [RAG_with_Pinecone.py]([RAG-Neo4J-Pinecone/RAG_with_Pinecone.py at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/RAG_with_Pinecone.py))
+Select your desired experiment by defining the following options in [RAG_with_Pinecone.py](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/RAG_with_Pinecone.py)
 ```
 retrieval_method = 'cosine' #What you defined at the time of pinecone creation
 
@@ -50,7 +50,7 @@ embedding_dimension = 1536  ##change to 384=gpt4all embedding,
 index_name = pinecone_index
 ```
 
-This script will load the input file embeddings into pinecone index, generate responses to the questions and write it to a json file in [output]([RAG-Neo4J-Pinecone/output at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/tree/main/output)) folder. 
+This script will load the input file embeddings into pinecone index, generate responses to the questions and write it to a json file in [output](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/tree/main/output) folder. 
 
 ### Running SimpleNEO4J Rag
 > You may run into errors while running this on your local system. 
@@ -60,7 +60,7 @@ This script will load the input file embeddings into pinecone index, generate re
 - *Similarity search*: only focuses on retrieving matches with top similarity score (cosine or mmr)
 - *Hybrid search*: search takes into account prominent keywords in addition to the similarity coefficient
 
-Select your desired experiment by defining the following options in [SimpleNeo4J_RAG.ipynb]([RAG-Neo4J-Pinecone/RAG-NEO4J/For Colab/SimpleNeo4J_RAG.ipynb at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/RAG-NEO4J/For%20Colab/SimpleNeo4J_RAG.ipynb))
+Select your desired experiment by defining the following options in [SimpleNeo4J_RAG.ipynb](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/RAG-NEO4J/For%20Colab/SimpleNeo4J_RAG.ipynb)
 ```
 retrieval_method = 'cosine' #euclidean, mmr, cosine  (mmr was running into an error)
 
@@ -75,10 +75,10 @@ embedding_dimension = 3072  ##change to 384=gpt4all embedding
 index_name = "vector"  # default index name
 ```
 
-This script will load the input file embeddings into neo4j instance, generate responses to the questions and write it to the json file in [output]([RAG-Neo4J-Pinecone/output at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/tree/main/output)) folder. 
+This script will load the input file embeddings into neo4j instance, generate responses to the questions and write it to the json file in [output](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/tree/main/output) folder. 
 
 ### Running AdvancedNEO4J Rag
-> Advanced NEO4J RAG strategies have been inspired by: [Implementing-Advanced-Retrieval-RAG-Strategies-With-Neo4j]([pks20iitk/Implementing-Advanced-Retrieval-RAG-Strategies-With-Neo4j: o beyond typical RAG strategies Retrieval-augmented generation applications seem to be the “Hello World” of AI applications. Nowadays, you can implement a “Chat with your PDF” application in only a few minutes with the help of LLM framework libraries like LangChain. (github.com)](https://github.com/pks20iitk/Implementing-Advanced-Retrieval-RAG-Strategies-With-Neo4j))
+> Advanced NEO4J RAG strategies have been inspired by: [Implementing-Advanced-Retrieval-RAG-Strategies-With-Neo4j](https://github.com/pks20iitk/Implementing-Advanced-Retrieval-RAG-Strategies-With-Neo4j)
 > You may run into errors while running this on your local system. 
 > Suggestion: Run this on google colab
 
@@ -87,7 +87,7 @@ This script will load the input file embeddings into neo4j instance, generate re
 - *Hypothetical Questions*: Documents are processed to determine potential questions they might answer. These questions are then indexed for better representation of specific concepts, while parent documents are retrieved to ensure context retention.
 - *Summaries:* Instead of indexing the entire document, a summary of the document is created and indexed. Similarly, the parent document is retrieved in a RAG application.
 
-Select your desired experiment by defining the following options in [AdvancedNeo4J_RAG_with_strategies.ipynb]([RAG-Neo4J-Pinecone/RAG-NEO4J/For Colab/AdvancedNeo4J_RAG_with_strategies.ipynb at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/RAG-NEO4J/For%20Colab/AdvancedNeo4J_RAG_with_strategies.ipynb))
+Select your desired experiment by defining the following options in [AdvancedNeo4J_RAG_with_strategies.ipynb](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/RAG-NEO4J/For%20Colab/AdvancedNeo4J_RAG_with_strategies.ipynb)
 ```
 retrieval_method = 'cosine' #take it from LoadingDatatoNeo4j
 
@@ -113,10 +113,10 @@ We are using six metrics to evaluate the RAG pipeline results:
 5. [Answer correctness](https://docs.ragas.io/en/latest/concepts/metrics/answer_correctness.html)
 6. [Answer similarity](https://docs.ragas.io/en/latest/concepts/metrics/semantic_similarity.html)
 
-Run [Evaluation_Metrics.py]([RAG-Neo4J-Pinecone/Evaluation_Metrics.py at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/Evaluation_Metrics.py)) to generate evaluation score for each question. Here is how the output of evaluation looks like: [scores.xlsx]([RAG-Neo4J-Pinecone/output/scores/qa_results_hybridneo4j_langchain_cosine_recursive_gpt4_scores.xlsx at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/output/scores/qa_results_hybridneo4j_langchain_cosine_recursive_gpt4_scores.xlsx))
+Run [Evaluation_Metrics.py](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/Evaluation_Metrics.py) to generate evaluation score for each question. Here is how the output of evaluation looks like: [scores.xlsx](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/output/scores/qa_results_hybridneo4j_langchain_cosine_recursive_gpt4_scores.xlsx)
 
 ### Pre-requisite Set up
 1. Set up accounts on [Neo4j](https://neo4j.com/), [Pinecone](https://app.pinecone.io/), [OpenAI](https://openai.com/), [Hugging Face,](https://huggingface.co/) and [TogetherAI](https://www.together.ai/).
-2. Add the API keys and configuration in [.env]([RAG-Neo4J-Pinecone/.env at main · AyeshaAmjad0828/RAG-Neo4J-Pinecone (github.com)](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env)) file.
+2. Add the API keys and configuration in [.env](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env) file.
 
 TogetherAI is used to facilate the inference from several LLMs on local machine.
