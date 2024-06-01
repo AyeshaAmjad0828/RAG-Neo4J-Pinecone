@@ -22,8 +22,8 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 def recursive(txt_doc):
     text_splitter = RecursiveCharacterTextSplitter(
         # Set a really small chunk size, just to show.
-        chunk_size = 100,
-        chunk_overlap  = 5,
+        chunk_size = 500,
+        chunk_overlap  = 50,
         length_function = len,
         is_separator_regex = False,
     )
@@ -35,8 +35,8 @@ def recursive(txt_doc):
 def character(txt_doc):
     text_splitter = CharacterTextSplitter(
     separator = ".",
-    chunk_size = 200,
-    chunk_overlap = 20 #always less than chunk size
+    chunk_size = 400,
+    chunk_overlap = 50 #always less than chunk size
     )
     characters = text_splitter.split_documents(txt_doc)
     return characters
