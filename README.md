@@ -6,9 +6,9 @@
 
 ### Technology Stack
 
-| Neo4j | Pinecone | Langchain | TogetherAI | OpenAI | Hugging Face                         |
-| ----- | -------- | --------- | ---------- | ------ | ------------------------------------ |
-|       |          |           |            |        | ![[Pasted image 20240602005149.png]] |
+| Neo4j                                                                                                                             | Pinecone | Langchain | TogetherAI | OpenAI | Hugging Face                         |
+| --------------------------------------------------------------------------------------------------------------------------------- | -------- | --------- | ---------- | ------ | ------------------------------------ |
+|   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005149.png)**    |          |           |            |        | ![[Pasted image 20240602005149.png]] |
 ### Overview
 **Purpose:**
 Conducting a comprehensive analysis of RAG (Retriever-Augmented Generation) pipeline using Neo4J and Pinecone to test: 
