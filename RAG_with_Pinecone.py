@@ -19,6 +19,8 @@ from utils.Chunkers_utils import recursive, character, sentence, paragraphs, sem
 from utils.embeddings_utils import  lc_openai_embedding, openai_embedding, spacy_embedding, generate_huggingface_embeddings, generate_gpt4all
 from LoadingData_Pinecone import upload_to_pinecone, filter_matching_docs
 from utils.LLM_utils import infer_Mixtral, infer_llama3, infer_llama2, infer_Qwen, infer_gpt4
+from pinecone import Pinecone
+
 
 import json
 import os
@@ -38,10 +40,25 @@ pinecone_index = os.getenv("Pinecone_INDEX")
 
 #Select Options
 retrieval_method = 'cosine' #What you defined at the time of pinecone creation
-chunker = 'semantic' ##recursive, semantic, sentence, character, paragraph
+chunker = 'recursive' ##recursive, semantic, sentence, character, paragraph
 embeddingtype = 'openai'  #openai, HF, langchain, spacy, empty string will invoke gpt4all
-llmtype = 'gpt4' #llama2, llama3, Qwen, empty string will invoke Mixtral
+llmtype = 'llama2' #llama2, llama3, Qwen, empty string will invoke Mixtral
 embedding_dimension = 1536  ##change to 384=gpt4all embedding,
+index_name = 'rag1'
+
+
+pc = Pinecone(api_key=pinecone_api_key)
+
+##ONLY RUN IF YOU WANT TO DELETE THE INDEX ON PINECONE
+# index_name = pinecone_index
+# if index_name in pc.list_indexes().names():
+#     print(f'Deleting index {index_name} ...')
+#     pc.delete_index(index_name)
+#     print('Done')
+# else:
+#     print(f'Index {index_name} does not exists!')
+
+
 
 
 ###INDEXING###
@@ -112,13 +129,14 @@ for question in questions:
     You are an AI assistant that is expert in Pakistan Constitution.
     Based on the following CONTEXT: \n\n
     {retrieved_content} \n\n
-    Please provide a detailed answer to the question: {question}.\n\n
+    Please provide a brief answer to the question: {question}.\n\n
     Please be truthful. Keep in mind, you will lose the job, if you answer out of CONTEXT questions.
-    If the responses are irrelevant to the question then respond by saying that I couldn't find a good response to your query in the database. 
+    If the responses are irrelevant to the question then respond by saying that 
+    I couldn't find a good response to your query in the database. 
     """
 
     #QA WITH LLM#
-    response = infer_gpt4(prompt=prompt)
+    response = infer_llama2(prompt=prompt) #infer_Mixtral, infer_llama3, infer_llama2, infer_Qwen, infer_gpt4
 
     # Store retrieved content and response in dictionary
     question_responses[question] = {
