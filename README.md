@@ -8,7 +8,7 @@
 
 | Neo4j | Pinecone | Langchain | TogetherAI | OpenAI | Hugging Face |
 | ----- | -------- | --------- | ---------- | ------ | ------------ |
-|   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005215.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005222.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005230.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005237.png)**    |            |        |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005149.png)**    |
+|   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005215.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005222.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005230.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005237.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005156.png)**    |   **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602005149.png)**    |
 ### Overview
 **Purpose:**
 Conducting a comprehensive analysis of RAG (Retriever-Augmented Generation) pipeline using Neo4J and Pinecone to test: 
