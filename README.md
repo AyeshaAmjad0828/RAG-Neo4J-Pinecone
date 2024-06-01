@@ -118,8 +118,8 @@ Run [Evaluation_Metrics.py](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecon
 ### Pre-requisite Set up
 1. Set up accounts on [Neo4j](https://neo4j.com/), [Pinecone](https://app.pinecone.io/), [OpenAI](https://openai.com/), [Hugging Face,](https://huggingface.co/) and [TogetherAI](https://www.together.ai/).
 2. Add the API keys and configuration in [.env](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env) file.
-
-TogetherAI is used to facilate the inference from several LLMs on local machine.
-
-You can create upto 5 indexes in Pinecone free version. Create a new index for each dimension. 
+3. Create instance in neo4j.
+4. Create indexes in pinecone. You can create upto 5 indexes in Pinecone free version. Create a new index for each dimension. 
 **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602020334.png)**
+
+> TogetherAI is used to facilate the inference from several LLMs on local machine.
