@@ -8,7 +8,7 @@
 
 | Neo4j                                | Pinecone                             | Langchain                            | TogetherAI                           | OpenAI                               | Hugging Face                         |
 | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![[Pasted image 20240601234610.png]] | ![[Pasted image 20240601234649.png]] | ![[Pasted image 20240601234718.png]] | ![[Pasted image 20240601234817.png]] | ![[Pasted image 20240601234527.png]] | ![[Pasted image 20240601234440.png]] |
+| ![[Pasted image 20240602005215.png]] | ![[Pasted image 20240602005222.png]] | ![[Pasted image 20240602005230.png]] | ![[Pasted image 20240602005237.png]] | ![[Pasted image 20240602005156.png]] | ![[Pasted image 20240602005149.png]] |
 ### Overview
 **Purpose:**
 Conducting a comprehensive analysis of RAG (Retriever-Augmented Generation) pipeline using Neo4J and Pinecone to test: 
