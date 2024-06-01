@@ -1,6 +1,6 @@
 # Comparative Analysis of RAG
 ## NEO4J vs PINECONE
-> Refer to [pre-requisite[(https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/tree/main?tab=readme-ov-file#pre-requisite-set-up) section for the environment set up prior to starting this experiment.
+> Refer to [pre-requisite](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/tree/main?tab=readme-ov-file#pre-requisite-set-up) section for the environment set up prior to starting this experiment.
 > 1. Clone this repository. 
 > 2. Add relevant API keys and configurations in [.env](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env) file. 
 
