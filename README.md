@@ -120,5 +120,6 @@ Run [Evaluation_Metrics.py](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecon
 2. Add the API keys and configuration in [.env](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/.env) file.
 
 TogetherAI is used to facilate the inference from several LLMs on local machine.
+
 You can create upto 5 indexes in Pinecone free version. Create a new index for each dimension. 
 **![](https://github.com/AyeshaAmjad0828/RAG-Neo4J-Pinecone/blob/main/README%20assets/Pasted%20image%2020240602020334.png)**
