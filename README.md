@@ -43,7 +43,7 @@ chunker = 'recursive' ##recursive, semantic, sentence, character, paragraph
 
 embeddingtype = 'openai'  #openai, HF, langchain, spacy, empty string will invoke gpt4all
 
-llmtype = 'llama2' #llama2, llama3, Qwen, empty string will invoke Mixtral
+llmtype = 'gpt4' #llama2, llama3, Qwen, empty string will invoke Mixtral
 
 embedding_dimension = 1536  ##change to 384=gpt4all embedding,
 
